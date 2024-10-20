@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+    <title>Payment Page</title>             <!-- Title of the page -->
+    <link rel="stylesheet" href="css folder\style.css">   <!-- Link to CSS file -->
+</head>
+<body>
+    <header>
+        <img src="images/Bookylogo.png" alt="Bookylogo.png" class="logo">  <!-- Logo image -->
+        <h1>Payment Page</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>    <!-- Nav Bar links -->
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="Payment">
+        <form id="payment-form">
+            <img src="images/paymentoptions.png" alt="paymentoptions.png">   <!-- Image for payment options -->
+            <label for="card-number">Card Number:</label>    <!-- Input  for card number -->
+            <input type="text" id="card-number" name="card-number" placeholder="Enter your card number" required>
+            <label for="card-holder">Card Holder:</label>   <!-- Input for card holder's name -->
+            <input type="text" id="card-holder" name="card-holder" placeholder="Enter card holder's name" required>
+            <label for="expiration-date">Expiration Date:</label>  <!-- Dropdowns for expiration month and year -->
+            <select id="expiration-month"></select>
+            <select id="expiration-year"></select>
+            <label for="cvv">CVV:</label>                          <!-- Input  for CVV -->
+            <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" required>
+            <button type="button" onclick="validateAndSubmit()">Continue</button>  <!-- Submit button -->
+        </form>
+    </div>
+
+    <script src="js folder\script.js"></script>   <!-- Link to JavaScript file -->
+
+</body>
+</html>
